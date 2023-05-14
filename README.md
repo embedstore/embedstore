@@ -24,7 +24,15 @@ embeddings = get_embeddings("9362fd4a-2653-4fe4-b931-9c83e7d6bf2c")
 ## Get all embedding info
 
 ```python
-from pyembeddingtown import get_all_embeddings_info
+from pyembeddingtown import get_embeddings_info
 
-embeddings = get_all_embeddings_info()
+embeddings = get_embeddings_info()
+```
+
+## Get all embedding info
+
+```python
+from pyembeddingtown import search_embedding_info
+
+embeddings = search_embedding_info("india")
 ```
