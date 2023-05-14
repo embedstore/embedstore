@@ -20,3 +20,11 @@ from pyembeddingtown import get_embeddings
 embeddings = get_embeddings("9362fd4a-2653-4fe4-b931-9c83e7d6bf2c")
 
 ```
+
+## Get all embedding info
+
+```python
+from pyembeddingtown import get_all_embeddings_info
+
+embeddings = get_all_embeddings_info()
+```
