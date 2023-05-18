@@ -6,8 +6,8 @@ from pyembeddingtown.apis import (
 )
 
 
-def load_embedding(doc_id):
-    return load_embedding_api(doc_id)
+def load_embedding(doc_id, embed_for=None):
+    return load_embedding_api(doc_id, embed_for)
 
 
 def get_embeddings_info():

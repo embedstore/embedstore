@@ -11,11 +11,13 @@ API_ENDPOINT_GET_ALL_EMBEDDING_INFO = "api/embedding/v1/info/"
 API_ENDPOINT_SEARCH_EMBEDIDNG_DOC = "api/embedding/v1/search/"
 
 
-def load_embedding_api(doc_id):
+def load_embedding_api(doc_id, embed_for=None):
     url = f"{API_BASE_URL}{API_ENDPOINT_GET_EMBEDDING_DOC}"
     data = {
         "doc_id": doc_id
     }
+    if embed_for:
+        data["embed_for"] = embed_for
     response = requests.post(url, data=data)
     if response.status_code == 200:
         if response.headers['Content-Type'] == 'application/json':
