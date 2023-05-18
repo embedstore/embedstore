@@ -3,8 +3,7 @@ import csv
 import requests
 import tempfile
 
-# API_BASE_URL = "https://embeddingtown.com/"
-API_BASE_URL = "http://localhost:8000/"
+API_BASE_URL = "https://embeddingtown.com/"
 
 API_ENDPOINT_GET_EMBEDDING_DOC = "api/embedding/v1/download/"
 API_ENDPOINT_GET_ALL_EMBEDDING_INFO = "api/embedding/v1/info/"
