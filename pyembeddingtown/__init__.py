@@ -1,13 +1,13 @@
 
 from pyembeddingtown.apis import (
-    get_embeddings_api,
+    load_embedding_api,
     get_all_embeddings_api,
     search_embedding_doc_api,
 )
 
 
-def get_embeddings(doc_id):
-    return get_embeddings_api(doc_id)
+def load_embedding(doc_id):
+    return load_embedding_api(doc_id)
 
 
 def get_embeddings_info():

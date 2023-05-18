@@ -1,4 +1,4 @@
-# pyembeddingtow
+# pyembeddingtown
 
 Python wrapper to access embeddings from [embeddingtown.com](https://embeddingtown.com)
 
@@ -15,9 +15,9 @@ python setup.py install
 ## Download an embedding
 
 ```python
-from pyembeddingtown import get_embeddings
+from pyembeddingtown import load_embedding
 
-embeddings = get_embeddings("9362fd4a-2653-4fe4-b931-9c83e7d6bf2c")
+embeddings = load_embedding("9362fd4a-2653-4fe4-b931-9c83e7d6bf2c")
 
 ```
 
