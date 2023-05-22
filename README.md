@@ -18,12 +18,12 @@ python setup.py install
 # load embeddings as a list
 from embedstore import load_embedding
 
-embeddings = load_embedding("9362fd4a-2653-4fe4-b931-9c83e7d6bf2c")
+embeddings = load_embedding("langchain/docs-python")
 print(len(embeddings))
 print(embeddings[1])
 
 # load embeddings for ingesting in Chroma db
-result = load_embedding("9362fd4a-2653-4fe4-b931-9c83e7d6bf2c", embed_for="chroma")
+result = load_embedding("langchain/docs-python", embed_for="chroma")
 # result is {"embeddings": [], "documents": [] "ids": []}
 print(result["embeddings"])
 print(result["documents"])
@@ -36,6 +36,9 @@ print(result["ids"])
 from embedstore import get_embeddings_info
 
 embeddings = get_embeddings_info()
+
+# output
+{"data": [{"name": "The Almanack Of Naval Ravikant", "id": "book/naval-almanack"}, {"name": "Langchain Python Docs", "id": "langchain/docs-python"}]}
 ```
 
 ## Get all embedding info
@@ -43,5 +46,8 @@ embeddings = get_embeddings_info()
 ```python
 from embedstore import search_embedding_info
 
-embeddings = search_embedding_info("india")
+embeddings = search_embedding_info("doc")
+
+# output
+{"data": [{"name": "Langchain Python Docs", "id": "langchain/docs-python"}]}
 ```
