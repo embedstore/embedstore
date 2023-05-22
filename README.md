@@ -1,11 +1,11 @@
 # pyembeddingtown
 
-Python wrapper to access embeddings from [embeddingtown.com](https://embeddingtown.com)
+Python wrapper to access embeddings from [embedstore.ai](https://embedstore.ai)
 
 # Install
 
 ```bash
-git clone https://github.com/taranjeet/pyembeddingtown.git
+git clone https://github.com/embedstore/pyembeddingtown.git
 cd pyembeddingtown
 python setup.py install
 ```
@@ -23,8 +23,8 @@ print(len(embeddings))
 print(embeddings[1])
 
 # load embeddings for ingesting in Chroma db
-
 result = load_embedding("9362fd4a-2653-4fe4-b931-9c83e7d6bf2c", embed_for="chroma")
+# result is {"embeddings": [], "documents": [] "ids": []}
 print(result["embeddings"])
 print(result["documents"])
 print(result["ids"])
