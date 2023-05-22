@@ -5,13 +5,13 @@ import tempfile
 
 API_BASE_URL = "https://embedstore.ai/"
 
-API_ENDPOINT_GET_EMBEDDING_DOC = "api/embedding/v1/download/"
+API_ENDPOINT_LOAD_EMBEDDING = "api/embedding/v1/download/"
 API_ENDPOINT_GET_ALL_EMBEDDING_INFO = "api/embedding/v1/info/"
 API_ENDPOINT_SEARCH_EMBEDIDNG_DOC = "api/embedding/v1/search/"
 
 
 def load_embedding_api(doc_id, embed_for=None):
-    url = f"{API_BASE_URL}{API_ENDPOINT_GET_EMBEDDING_DOC}"
+    url = f"{API_BASE_URL}{API_ENDPOINT_LOAD_EMBEDDING}"
     data = {
         "doc_id": doc_id
     }

@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='pyembeddingtown',
+    name='embedstore',
     version='0.1',
-    description='Python wrapper for embedding town',
+    description='Python wrapper for embedstore - ready made embeddings',
     author='Taranjeet Singh',
     packages=find_packages(),
     install_requires=[

@@ -1,5 +1,5 @@
 
-from pyembeddingtown.apis import (
+from embedstore.apis import (
     load_embedding_api,
     get_all_embeddings_api,
     search_embedding_doc_api,
